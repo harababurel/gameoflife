@@ -46,17 +46,17 @@ these are all the possible keys:
 
      key                 | default value  | note
      ------------------- |:---------------|:----------------------------------------------------
-     `height`            | `440`          | `height of the board (in pixels)`
-     `width`             | `770`          | `width of the board (in pixels)`
-     `bgRed`             | `115`          | `/-----------------------------`
-     `bgGreen`           | `203`          | `| RGB value for the background`
-     `bgBlue`            | `179`          | `\-----------------------------`
-     `gridRed`           | `46`           | `/----------------------------`
-     `gridGreen`         | `159`          | `| RGB value for the gridlines`
-     `gridBlue`          | `157`          | `\----------------------------`
-     `cellRed`           | `46`           | `/-------------------------`
-     `cellGreen`         | `159`          | `| RGB value for live cells`
-     `cellBlue`          | `157`          | `\-------------------------`
-     `cellSize`          | `20`           | `size of each cell edge (in pixels)`
-     `secondsInbetween`  | `0.05`         | `time gap between consecutive frames (in seconds)`
+     `width`             | `800`          | `width of the board (in pixels)`
+     `height`            | `600`          | `height of the board (in pixels)`
+     `bgRed`             | `9`            | `/-----------------------------`
+     `bgGreen`           | `40`           | `| RGB value for the background`
+     `bgBlue`            | `52`           | `\-----------------------------`
+     `gridRed`           | `3`            | `/----------------------------`
+     `gridGreen`         | `13`           | `| RGB value for the gridlines`
+     `gridBlue`          | `17`           | `\----------------------------`
+     `cellRed`           | `30`           | `/-------------------------`
+     `cellGreen`         | `133`          | `| RGB value for live cells`
+     `cellBlue`          | `174`          | `\-------------------------`
+     `cellSize`          | `40`           | `size of each cell edge (in pixels)`
+     `secondsInbetween`  | `0.1`          | `time gap between consecutive frames (in seconds)`
      `displayGrid`       | `1`            | `boolean value. whether or not to display gridlines`

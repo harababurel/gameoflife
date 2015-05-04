@@ -149,7 +149,9 @@ def main():
         print 'Could not initialize.'
         exit(0)
 
-    print 'Board size:\n    %i vertical cells\n    %i horizontal cells' % (vCells, hCells)
+    print 'Board size:'
+    print '    %i vertical cells' % vCells
+    print '    %i horizontal cells' % hCells
 
     while True:
         screen.fill(background)
@@ -161,6 +163,8 @@ def main():
         pygame.display.flip()
 
         if A == pre or pygame.event.poll().type == pygame.QUIT:
+            if A == pre:
+                time.sleep(10)
             pygame.quit()
             break
 
