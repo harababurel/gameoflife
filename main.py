@@ -61,8 +61,8 @@ def init():
     hCells = screenSize[0] // cellSize
     vCells = screenSize[1] // cellSize
 
-    A = [[False for i in range(-9, vCells+9)] for j in range(-9, hCells+9)]
-    pre = [[False for i in range(-9, vCells+9)] for j in range(-9, hCells+9)]
+    A = [[False for i in range(0, vCells+20)] for j in range(0, hCells+20)]
+    pre = [[False for i in range(0, vCells+20)] for j in range(0, hCells+20)]
 
     i, j = 0, 0
     with open('initial-state.in', 'r') as f:
@@ -115,8 +115,8 @@ def paintCell(i, j, color):
 
 def duplicate():
     global A, pre
-    for x in range(-3, hCells+3):
-        for y in range(-3, vCells+3):
+    for x in range(0, hCells+3):
+        for y in range(0, vCells+3):
             pre[x][y] = A[x][y]
 
 
@@ -133,8 +133,8 @@ def printMatrix(A):
 
 
 def constructMatrix(A):
-    for x in range(-7, hCells+7):
-        for y in range(-7, vCells+7):
+    for x in range(0, hCells+1):
+        for y in range(0, vCells+1):
             k = neighbours(x, y)
             if k == 3:
                 A[x][y] = True
