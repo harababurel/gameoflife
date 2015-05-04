@@ -63,3 +63,5 @@ these are all the possible keys:
 
 
 ![Pulsar](https://raw.githubusercontent.com/harababurel/gameoflife/master/screens/pulsar2.png)
+
+![Weekender](https://raw.githubusercontent.com/harababurel/gameoflife/master/screens/wekender2.png)
