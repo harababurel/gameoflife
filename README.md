@@ -31,6 +31,12 @@ you need an initial configuration for the game. in order to generate one, run th
 python2.7 state-generator.py
 ```
 
+also, be sure to check the `settings.cfg` file for any alteration to the user preferences.
+finally, you can run the simulator with the following command:
+```console
+python2.7 main.py
+```
+
 ## configuration
 
 all configurable settings are stored in `settings.cfg`.
