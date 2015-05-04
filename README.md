@@ -60,3 +60,6 @@ these are all the possible keys:
      `cellSize`          | `40`           | `size of each cell edge (in pixels)`
      `secondsInbetween`  | `0.1`          | `time gap between consecutive frames (in seconds)`
      `displayGrid`       | `1`            | `boolean value. whether or not to display gridlines`
+
+
+![Pulsar](https://raw.githubusercontent.com/harababurel/gameoflife/master/screens/pulsar2.png)
