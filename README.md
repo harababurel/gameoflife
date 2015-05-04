@@ -3,6 +3,21 @@
 graphic implementation of Conway's Game of Life.
 
 <hr>
+## inspiration
+the fact that such a fixed initial configuration and a simple set of rules can make a system behave so chaotically determined me to implement and test it by myself.
+
+rules of the game (explained by its creator [here](https://www.youtube.com/watch?v=R9Plq-D1gEk) and [here](https://www.youtube.com/watch?v=E8kUJL04ELA)):
+* the game is a [zero-player game](http://en.wikipedia.org/wiki/Zero-player_game)
+* it is played on an infinte two-dimensional orthogonal grid of squre cells
+* each cell is in one of two possible states: **alive** or **dead**
+* every cell interacts with its eight neighbours (cells situated at the distance of one unit)
+* at each step in time, the following transitions occur:
+    * any live cell with fewer than two live neighbours dies, as if caused by under-population
+    * any live cell with two or three live neighbours lives on to the next generation
+    * any live cell with more than three live neighbours dies, as if by overcrowding
+    * any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction
+* the initial pattern constitutes the seed of the system
+* the first generation is created by applying the above rules simultaneously to every cell in the seed (births and deaths occur simultaneously)
 
 ## requirements
 
