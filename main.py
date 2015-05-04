@@ -56,7 +56,7 @@ def init():
                 if 'displayGrid = ' in line:
                     displayGrid = int(val) == 1
     except:
-        print 'Nu exista fisierul settings.cfg! Folosesc setarile implicite.'
+        print 'Could not open settings.cfg! Using default settings.'
 
     hCells = screenSize[0] // cellSize
     vCells = screenSize[1] // cellSize
@@ -67,9 +67,8 @@ def init():
     i, j = 0, 0
     with open('initial-state.in', 'r') as f:
         for line in f:
-            s = list(map(int, line.split()))
-            for j in range(0, min(hCells-1, len(s))):
-                A[j][i] = True if s[j] == 1 else False
+            for j in range(0, min(hCells-1, len(line))):
+                A[j][i] = line[j] == '#'
                 pre[j][i] = A[j][i]
             i += 1
             if i >= vCells:
@@ -147,10 +146,10 @@ def main():
     try:
         init()
     except:
-        print 'Nu am putut face initializarea.'
+        print 'Could not initialize.'
         exit(0)
 
-    print 'Dimensiunea: %i verticala, %i orizontala' % (vCells, hCells)
+    print 'Board size:\n    %i vertical cells\n    %i horizontal cells' % (vCells, hCells)
 
     while True:
         screen.fill(background)
