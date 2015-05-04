@@ -27,33 +27,33 @@ def init():
         with open('settings.cfg', 'r') as f:
             for line in f:
                 val = float(line.split()[-1])
-                if 'height = ' in line:
+                if 'height' in line:
                     screenSize = (screenSize[0], int(val))
-                if 'width = ' in line:
+                if 'width' in line:
                     screenSize = (int(val), screenSize[1])
-                if 'bgRed = ' in line:
+                if 'bgRed' in line:
                     background = (int(val), background[1], background[2])
-                if 'bgGreen = ' in line:
+                if 'bgGreen' in line:
                     background = (background[0], int(val), background[2])
-                if 'bgBlue = ' in line:
+                if 'bgBlue' in line:
                     background = (background[0], background[1], int(val))
-                if 'gridRed = ' in line:
+                if 'gridRed' in line:
                     gridColor = (int(val), gridColor[1], gridColor[2])
-                if 'gridGreen = ' in line:
+                if 'gridGreen' in line:
                     gridColor = (gridColor[0], int(val), gridColor[2])
-                if 'gridBlue = ' in line:
+                if 'gridBlue' in line:
                     gridColor = (gridColor[0], gridColor[1], int(val))
-                if 'cellRed = ' in line:
+                if 'cellRed' in line:
                     cellColor = (int(val), cellColor[1], cellColor[2])
-                if 'cellGreen = ' in line:
+                if 'cellGreen' in line:
                     cellColor = (cellColor[0], int(val), cellColor[2])
-                if 'cellBlue = ' in line:
+                if 'cellBlue' in line:
                     cellColor = (cellColor[0], cellColor[1], int(val))
-                if 'cellSize = ' in line:
+                if 'cellSize' in line:
                     cellSize = int(val)
                 if 'secondsInbetween' in line:
                     secondsInbetween = val
-                if 'displayGrid = ' in line:
+                if 'displayGrid' in line:
                     displayGrid = int(val) == 1
     except:
         print 'Could not open settings.cfg! Using default settings.'
