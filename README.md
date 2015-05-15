@@ -30,6 +30,9 @@ you need an initial configuration for the game. in order to generate one, run th
 ```console
 python2.7 state-generator.py
 ```
+the generator will ask for the `height`, `width`, and `density` of the board. the density represents the expected percentage of live cells.
+
+additionally, you can find some preset samples in the `templates/initial-states/` directory.
 
 also, be sure to check the `settings.cfg` file for any alteration to the user preferences.
 finally, you can run the simulator with the following command:
