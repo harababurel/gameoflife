@@ -3,6 +3,7 @@
 graphic implementation of Conway's Game of Life.
 
 <hr>
+
 ## inspiration
 the fact that such a fixed initial configuration and a simple set of rules can make a system behave so chaotically determined me to implement and test it by myself.
 
